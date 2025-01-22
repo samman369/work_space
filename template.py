@@ -15,9 +15,9 @@ list_of_files = [
     "src/utils/__init__.py",
     "src/utils/utils.py",
     "src/logger/logging.py",
-    "src/exception/exception",
-    "tests/unit/__init__.py",
-    "tests/unit/integration/__init__.py",
+    "src/exception/exception.py",
+    "tests/__init__.py",
+    "tests/integration/__init__.py",
     "init_setup.sh",
     "requirement.txt",
     "requirement_dev.txt",
@@ -36,4 +36,4 @@ for filepath in list_of_files:
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
-            pass # create an empty file
+            pass # create an empty fill
